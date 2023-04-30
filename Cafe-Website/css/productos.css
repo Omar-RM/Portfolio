@@ -1,0 +1,222 @@
+#contenido {
+    width: 80%
+}
+
+#items {
+
+    background-color: rgb(228, 230, 235);
+    padding: 1em;
+    margin: 1em;
+    display: block;
+    border-radius: 10px;
+    width: 80%;
+    height: 5em;
+}
+
+
+.item-input {
+    
+    height: 15px;
+    width: 30%;
+    margin: .3em;
+    text-align: center;
+    margin-bottom: 0.8em;
+    letter-spacing: 1px;
+    height: 2em;
+}
+
+#items button {
+    margin-left: 10%;
+    bottom: 10px;
+    height: 30px;
+    width: 80%;
+}
+
+#items-list {
+    background-color: #cccccc;
+    width: 80%;
+    padding: 1em;
+    margin: 1em;
+    margin: center;
+}
+
+
+.fila{
+    justify-content: center;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    font-size: 18px;
+    padding:.25em;
+    border-radius: 4px;
+    margin-bottom: .2em;
+    display: flex;
+}
+.it{
+    letter-spacing: 2px;
+}
+.item,.price,.categoria, .borrar{
+    width: 22%;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* PUNTO DE VENTA CSS */
+
+#total-venta {
+    position: left;
+    width: 20em;
+    background-color: #2d2d2d;
+    ;
+}
+
+#POS {
+    background-color: #2d2d2d;
+    width: 80%;
+    margin-right: 2em;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.box-item {
+    width: 11.8em;
+    display: grid;
+    height: 10em;
+    border-radius: 10px;
+    background-color: #122620;
+    color: #ffffff;
+    text-align: center;
+}
+
+.box-item-name {
+    margin-top: .5em;
+    font-size: 2em;
+    height: 2.5em;
+}
+
+.box-item-price {
+
+    font-size: 1em;
+}
+
+.box-item button {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    border: #ffffff solid 1px;
+    width: 5em;
+    padding: .3em;
+    margin: .4em 4.7em;
+    cursor: pointer;
+}
+
+#sumary {
+    border: #ffffff 1px solid;
+    margin: 0 .5em 1em;
+    border-radius: 10px;
+    background-color: #2d2d2d;
+    height: 50vh;
+    color: #fff;
+    padding: 0.5em;
+
+}
+
+.fila-sumary {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.sumary-qty {
+    width: 15%;
+}
+
+.sumary-precio {
+    width: 10%;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.sumary-producto {
+    width: 60%;
+
+}
+
+.sumary-borrar {
+    width: 10%;
+    margin-left: .5em;
+    border: #ffff solid 1px;
+    color: white;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+#subtotal-venta,
+#propina-venta,
+#total-venta-sumary {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-left: .7em;
+}
+
+#total-venta-sumary {
+    font-size: 1.5em;
+}
+
+.text-sumary {
+    width: 50%;
+}
+
+.peso {
+    display: flex;
+    margin-left: 1em;
+    justify-content: center;
+    width: 50%;
+}
+
+#venta-btn,
+#venta-clear {
+    background-color: transparent;
+    border: 1px #fff solid;
+    color: #ffffff;
+    width: 80%;
+    font-size: 2em;
+    margin: .5em 1em;
+    cursor: pointer;
+}
+
+#venta-btn:hover {
+    background-color: #39cc5e;
+
+}
+
+#venta-clear:hover {
+    background-color: #ca3e2b;
+}
+
+#POS-categorias {
+    margin-left: 1em;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    /* border: #ca3e2b 1px solid; */
+}
+
+#POS-categorias ul {
+   list-style: none;
+   display: inline-flex;
+}
+#POS-categorias ul li{
+   margin-right: .5em;
+   font-size: 1.8em;
+   padding: .2em;
+   border-radius: 10px;
+   
+}
+
+#POS-categorias ul li a{
+    text-decoration: none;
+    color: #fff;
+}
