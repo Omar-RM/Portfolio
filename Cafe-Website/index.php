@@ -1,6 +1,6 @@
 <?php
-require '../database/database.php';
-require '../database/productsDB.php';
+require 'database/database.php';
+require 'database/productsDB.php';
 
 $action = filter_input(INPUT_POST,'action');
 if($action == null){
@@ -11,6 +11,9 @@ if($action == null){
 }
 
 switch($action){
+    case 'home-page':
+        include 'files/view/home.php';
+        break;
     case 'login':
         session_destroy();
         include '../php/show_login.php';

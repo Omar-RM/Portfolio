@@ -10,7 +10,7 @@
             var dateBox = document.getElementById("date-text");
             dateBox.textContent = date;
         </script>
-            <script src="../view/app.js"></script>
+            <script src="../js/app.js"></script>
 
         
     </footer>
