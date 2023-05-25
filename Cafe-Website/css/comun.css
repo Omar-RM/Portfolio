@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3.5em;
+    height:5.2em;
     width: 100%;
     color: white;
     background-color: rgb(0, 0, 0);
@@ -30,6 +30,33 @@ nav {
 
 .box {
     display: inline;
+    margin-left: 1em;
+}
+
+.box a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.profile-nav-box-btn {
+    margin-left: 3em;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 10%;
+    /* margin: auto; */
+    padding: auto;
+}
+.username-nav-btn{
+    font-size: 1.3em;
+}
+.profile-nav-btn{
+padding-top: 1em;}
+.username-nav-btn,.profile-nav-btn{
+    display: solid;
+    /* border: 1px solid #ca3e2b; */
+    width: 45%;
+    align-content: center;
 }
 
 .home-btn {
@@ -447,6 +474,7 @@ main {
 #POS-categorias ul li a:hover {
     background-color: #ca3e2b;
 }
+
 /***/
 /* ALL SALES SECTION */
 /***/
@@ -457,9 +485,10 @@ main {
     padding: 1em;
     height: auto;
     color: white;
-    
+
 }
-.container{
+
+.container {
     border: solid 1px white;
     border-radius: 10px;
     margin-bottom: 1em;
@@ -471,21 +500,25 @@ main {
     margin: auto;
     border-bottom: 1px solid white;
     width: 95%;
-   
+
 }
-.sales-day-orderid{
+
+.sales-day-orderid {
     margin-top: 1em;
     text-align: center;
 
 }
-.sales-day-product{
+
+.sales-day-product {
     width: 60%;
 }
-.container-total-sale h1{
+
+.container-total-sale h1 {
     font-size: 2em;
 }
-.container-total-sale{
+
+.container-total-sale {
     text-align: right;
-    margin:   1.5em 11em 1em 0;
+    margin: 1.5em 11em 1em 0;
     color: tan;
 }
