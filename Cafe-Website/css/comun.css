@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:5.2em;
+    height: 5.2em;
     width: 100%;
     color: white;
     background-color: rgb(0, 0, 0);
@@ -38,13 +38,14 @@ nav {
     color: #fff;
     font-family: sans-serif;
 }
-.menu-nav-btn{
-    margin-left:2em ;
-    
+
+.menu-nav-btn {
+    margin-left: 2em;
+
 }
 
-.menu-nav-btn a:hover{
-    color:blue;
+.menu-nav-btn a:hover {
+    color: blue;
 }
 
 .profile-nav-box-btn {
@@ -55,12 +56,17 @@ nav {
     /* margin: auto; */
     padding: auto;
 }
-.username-nav-btn{
+
+.username-nav-btn {
     font-size: 1.3em;
 }
-.profile-nav-btn{
-padding-top: 1em;}
-.username-nav-btn,.profile-nav-btn{
+
+.profile-nav-btn {
+    padding-top: 1em;
+}
+
+.username-nav-btn,
+.profile-nav-btn {
     display: solid;
     /* border: 1px solid #ca3e2b; */
     width: 45%;
@@ -153,12 +159,13 @@ padding-top: 1em;}
 #wrap {
     max-width: 1160px;
     margin: auto;
+    padding-top: 3em;
 }
 
 
 main {
     display: flex;
-    padding-top: 6vh;
+    padding-top: 10vh;
     padding-left: 4em;
     width: 100%;
 }
@@ -529,4 +536,62 @@ main {
     text-align: right;
     margin: 1.5em 11em 1em 0;
     color: tan;
+}
+
+/* LOGIN CSS */
+.login-box-section{
+margin-top: 10em;
+width: 100%;
+padding-left: 20em;
+}
+.div-login{
+    max-width: 35em;
+}
+.login-box{
+font-family: Baskerville ;
+}
+.login-box h1{
+    font-size: 2em;
+}
+.login-box-header{
+margin-bottom: 1em;
+}
+.login-box-body label{
+font-size: 1.5em;
+}
+.login-box-body input{
+    width: 100%;
+    height: 3em;
+    border-radius: 5px;
+}
+ button {
+    color: #ffff;
+    width: 100%;
+    font-size: 3em;
+    margin-top: .7em;
+    border-radius: 10px;
+}
+.login-box-body button{
+    background-color: #006ce4;
+}
+.login-box-signup button{
+    background-color: #e40000;
+}
+.login-box-body button:hover, .login-box-signup button:hover{
+    cursor: pointer;
+}
+.login-box-divisor {
+    display: flex;
+    max-height: 15px;
+    margin-top: 1em
+}
+.login-box-divisor hr{
+width: 29%;
+height: .1px;
+background-color: black;
+margin-top: .9em;
+}
+.login-box-divisor span{
+    margin: 0 1em ;
+    font-size: 25px;
 }

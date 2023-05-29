@@ -63,9 +63,38 @@
     </header>
     <div id="wrap">
         <main>
+            <section class="login-box-section ">
+                <div class="div-login">
 
-            4
-
+                
+                <div class="login-box login-box-header">
+                    <h1>Login or create and account</h1>
+                </div>
+                <form action="index.php" enctype="multipart/form-data" method="POST" class="login-box login-box-body">
+                    <input type="hidden" name="action" value="go_to_Signup">
+                    <input type="hidden" action="">
+                    <div class="login-form-email-label">
+                        <label>Username</label>
+                        <input type="" name="login-username">
+                    </div>
+                    <div class="login-form-password">
+                        <label>Password</label>
+                        <input type="password" name="login-password">
+                    </div>
+                    <button type="submit">LOGIN</button>
+                </form>
+                <div class="login-box login-box-divisor">
+                    <hr><span>Create an account</span>
+                    <hr>
+                </div>
+                <div class="login-box-signup">
+                    <form action="index.php" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="action" value="go_to_Signup">
+                    <button type="submit">SIGNUP</button>
+                </form>
+                </div>
+            </div>
+            </section>
 
         </main>
     </div>
