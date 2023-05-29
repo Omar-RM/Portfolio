@@ -75,3 +75,81 @@ function return_max_id(){
     $st->closeCursor();
     return $id['id'];
 }
+function add_to_order_list($id,$product, $price, $date){
+    global $db;
+    $query ="INSERT INTO orderlist(orderid,product, price, date) VALUES (:id, :product, :price, :date)";
+    $st = $db->prepare($query);
+    $st->bindValue(':id', $id);
+    $st->bindValue(':product', $product);
+    $st->bindValue(':price', $price);
+    $st->bindValue(':date', $date);
+        try{
+        $st->execute();
+    }catch(PDOException $e){
+        header("Location:../php/error.php?msg".$e->getMessage());
+    }
+    $st->closeCursor();
+    return true;
+}
+//Display the orderList table using date
+function show_order_by_date($date){
+    global $db;
+    $query ="SELECT * FROM orderlist WHERE date = :date";
+    
+    $st= $db->prepare($query);
+    $st->bindValue(':date', $date);
+    try{
+        $st->execute();
+    }catch(PDOException $e){
+        header("Location:../php/error.php".$e->getMessage());
+    }
+    $products=$st->fetchAll();
+    $st->closeCursor();
+    return $products;
+}
+//Return the orderList table.
+function show_order_by_id($id){
+    global $db;
+    $query ="SELECT * FROM orderlist WHERE orderid = :id" ;
+    $st= $db->prepare($query);
+    $st->bindValue(':id', $id);
+
+    try{
+        $st->execute();
+    }catch(PDOException $e){
+        header("Location:../php/error.php".$e->getMessage());
+    }
+    $products=$st->fetchAll();
+    $st->closeCursor();
+    return $products;
+}
+// Return the ordersTrack table
+function show_order_ids(){
+    global $db;
+    $query ="SELECT * FROM orderstrack" ;
+    
+    $st= $db->prepare($query);
+    try{
+        $st->execute();
+    }catch(PDOException $e){
+        header("Location:../php/error.php".$e->getMessage());
+    }
+    $products=$st->fetchAll();
+    $st->closeCursor();
+    return $products;
+}
+// Takes id to search in db[orderList] then sum and return the total of the order with that id.
+function return_total_by_id($id){
+    global $db;
+    $query = "SELECT sum(price) as total FROM orderlist WHERE orderId = :id";
+    $st = $db->prepare($query);
+    $st->bindValue(':id', $id);
+    try{
+        $st->execute();
+    }catch(PDOException $e){
+        header("Location:../php/error.php".$e->getMessage());
+    }
+    $totalPrice = $st->fetch();
+    $st->closeCursor();
+    return $totalPrice['total'];
+}
