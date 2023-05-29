@@ -1,6 +1,7 @@
 <?php
-require 'database/database.php';
-require 'database/productsDB.php';
+require 'database/connection.php';
+require 'database/productQueries.php';
+
 
 $action = filter_input(INPUT_POST,'action');
 if($action == null){
